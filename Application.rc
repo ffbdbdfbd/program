@@ -1,0 +1,258 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open\t",                      ID_FILE_OPEN
+        MENUITEM "Save\t",                      ID_FILE_SAVE
+        MENUITEM "Save As...",                  ID_FILE_SAVE_AS
+        MENUITEM "Open Recent",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "Exit",                        ID_APP_EXIT
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Capture Filter",              ID_APP_ABOUT
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SELECT DIALOG DISCARDABLE  0, 0, 494, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select interface"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,428,114,50,14
+    PUSHBUTTON      "Close",IDCANCEL,428,133,50,14
+END
+
+IDD_FILTER DIALOG DISCARDABLE  0, 0, 361, 219
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Capture Filter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,207,188,50,14
+    PUSHBUTTON      "Clear",IDCANCEL,267,188,50,14
+    EDITTEXT        IDC_FILTER,29,83,290,92,ES_AUTOHSCROLL
+    LTEXT           "sourceip:192.168.0.1\ndestinationip:192.168.0.103\nprotocol:tcp\nsourceip:192.168.0.1:protocol:tcp\nsourceip:192.168.0.1:destinationip:192.168.0.103\nsourceip:192.168.0.1:destinationip:192.168.0.103:protocol:tcp",
+                    IDC_STATIC,30,26,289,49
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 478
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_SELECTSTART
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_SAVE_AS
+    BUTTON      ID_ENDCATCH
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  DISCARDABLE     "toolbar1.bmp"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Unauthorized copy\0"
+            VALUE "FileDescription", "Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Application\0"
+            VALUE "LegalCopyright", "Copyright © 2019\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Application.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Unauthorized copy Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_OPEN            "Open\nOpen"
+    ID_FILE_CLOSE           "Close\nClose"
+    ID_FILE_SAVE            "Save\nSave"
+    ID_FILE_SAVE_AS         "Save As\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SELECTSTART          "Start\nStart"
+    ID_ENDCATCH             "Stop\nStop"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Application"
+    AFX_IDS_IDLEMESSAGE     " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "CaptureFilter"
+    ID_APP_EXIT             "Exit without save"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open Recent"
+    ID_FILE_MRU_FILE2       " "
+    ID_FILE_MRU_FILE3       " "
+    ID_FILE_MRU_FILE4       " "
+    ID_FILE_MRU_FILE5       " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_UNTITLED        "Application"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
